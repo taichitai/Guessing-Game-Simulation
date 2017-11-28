@@ -6,8 +6,8 @@ Set the variables here.
 Comment out one of the different K generation methods to test different scenarios.
 """
 
-lowerLimit = -1000
-upperLimit = 1000
+lowerLimit = 0
+upperLimit = 100
 k = random.randint(1, 100) #Random K
 # k = (upperLimit - lowerLimit) / 2 + lowerLimit #K = mean of lowerLimit and upperLimit
 numberOfRuns = 100
@@ -36,7 +36,7 @@ def guessScenario(Scenario, Guess):
     """
     Guesses based on k, if K > A, then guesses A is bigger.
     Random guess if K = A.
-    Returns True on coreect guesses
+    Returns True on correct guesses
     """
     
     if scenario[0] > Guess:
